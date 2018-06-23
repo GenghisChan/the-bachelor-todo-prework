@@ -53,5 +53,18 @@ end
 
 
 def get_average_age_for_season(data, season)
-  # code here
+ages = Array.new
+total = 0
+data[season].each do |people|
+  people.each do |key, value|
+    if key == "age"
+      ages.push(people["age"].to_f)
+    end
+    end
+    ages.inject(0) do |sum, x|
+    total = sum + x
+    end
+    end
+    average = total/ages.length
+    return average.ceil
 end
