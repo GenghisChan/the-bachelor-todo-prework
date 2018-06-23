@@ -13,11 +13,11 @@ end
 #and returns the name of the woman who has that occupation.
 def get_contestant_name(data, occupation)
   data.each do |season, contestants|
-    contestants.each do |k, v|
+    contestants.each do |k|
       k.each do |key, value|
    if value == occupation
-     name = k[:name]
-     return name
+     return k["name"]
+     
     end
   end
   end
