@@ -10,7 +10,7 @@ data[season].each do |name|
 end
 
 
-end
+
 
 def get_contestant_name(data, occupation)
   # code here
