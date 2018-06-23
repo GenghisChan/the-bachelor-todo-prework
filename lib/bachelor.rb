@@ -66,5 +66,5 @@ data[season].each do |people|
     end
     end
     average = total/ages.length
-    return average.ceil
+    return average.round
 end
