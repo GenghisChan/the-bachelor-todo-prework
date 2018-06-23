@@ -9,11 +9,18 @@ data[season].each do |name|
   end
 end
 
-
-
-
+#Build a method, get_contestant_name, that takes in the data hash and an occupation string
+#and returns the name of the woman who has that occupation.
 def get_contestant_name(data, occupation)
-  # code here
+  data.each do |names, info|
+  info.each do |k, v|
+  k.each do |key, value|
+   if value == occupation
+    return k[:name]
+    end
+  end
+  end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
