@@ -17,10 +17,9 @@ def get_contestant_name(data, occupation)
       k.each do |key, value|
    if value == occupation
      return k["name"]
-
+        end
+      end
     end
-  end
-  end
   end
 end
 
