@@ -12,8 +12,8 @@ end
 #Build a method, get_contestant_name, that takes in the data hash and an occupation string
 #and returns the name of the woman who has that occupation.
 def get_contestant_name(data, occupation)
-  data.each do |season, info|
-    info.each do |k, v|
+  data.each do |season, contestants|
+    contestants.each do |k, v|
       k.each do |key, value|
    if value == occupation
      name = k[:name]
