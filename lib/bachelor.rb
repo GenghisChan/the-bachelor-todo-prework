@@ -31,18 +31,26 @@ counter = 0
       people.each do |key, value|
    if value == hometown
      counter += 1
-
+        end
+      end
     end
-  end
-  end
   end
   counter
 end
 
 
 def get_occupation(data, hometown)
-  # code here
+  data.each do |season, contestants|
+    contestants.each do |people|
+      people.each do |key, value|
+   if value == hometown
+      return people[:occupation]
+        end
+      end
+    end
+  end
 end
+
 
 def get_average_age_for_season(data, season)
   # code here
